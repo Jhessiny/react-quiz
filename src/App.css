@@ -1,38 +1,119 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2c;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.q-card {
+  background-color: rgb(4, 4, 37);
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.number-question {
+  font-size: 1.5rem;
+}
+
+.p-head {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.q-head,
+.q-body {
+  padding: 10px 30px 20px 30px;
+}
+
+.q-head {
+  border-bottom: 1px solid #eee;
+}
+
+label {
+  padding: 8px;
+  border: 1px solid #2a2a44;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgb(212, 212, 212);
+  color: #222222;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #2f2f4d;
+  color: #eee;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.btn:disabled {
+  background-color: #eee;
+  color: #666;
+  /* pointer-events: none; */
+  cursor: not-allowed;
+}
+
+.score-info {
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .score-info h2 {
+  padding: 15px 0;
+  border-bottom: ;
+} */
+
+.score-info p {
+  padding: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.approved-p {
+  color: greenyellow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.repproved-p {
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myTimer {
+  font-size: 1.7rem;
+  background-color: #2f2f4d;
+  font-family: "Exo", sans-serif;
+  padding: 10px 25px;
+  position: absolute;
+  width: 100px;
 }
