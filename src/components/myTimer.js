@@ -6,12 +6,16 @@ const MyTimer = () => {
 
   return (
     <div className="myTimer">
-      <Timer initialTime={300000} direction="backward">
+      <Timer
+        initialTime={300000}
+        direction="backward"
+        formatValue={(value) => `${value < 10 ? `0${value}` : value}`}
+      >
         {() => (
-          <React.Fragment>
+          <>
             <Minutes />:
             <Seconds />
-          </React.Fragment>
+          </>
         )}
       </Timer>
     </div>

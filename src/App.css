@@ -115,5 +115,6 @@ input[type="radio"]:checked + label {
   font-family: "Exo", sans-serif;
   padding: 10px 25px;
   position: absolute;
-  width: 100px;
+  width: 120px;
+  box-sizing: border-box;
 }
